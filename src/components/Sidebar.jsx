@@ -1,33 +1,54 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { FiGrid, FiUsers, FiCalendar, FiFileText, FiBookOpen, FiCreditCard, FiBell, FiTruck, FiHelpCircle, FiHome } from 'react-icons/fi';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
+import {
+  FiGrid,
+  FiUsers,
+  FiCalendar,
+  FiFileText,
+  FiBookOpen,
+  FiCreditCard,
+  FiBell,
+  FiTruck,
+  FiHelpCircle,
+  FiHome,
+} from "react-icons/fi";
 
 const Sidebar = () => {
   const menuItems = [
-    { name: 'Dashboard', icon: <FiGrid />, path: '/' },
-    { name: 'Students', icon: <FiUsers />, path: '/students' },
-    { name: 'Attendance', icon: <FiCalendar />, path: '/attendance' },
-    // ... add all your other menu items here
-  ];
+    { name: "Dashboard", icon: <FiGrid />, path: "/" },
+    { name: "Students", icon: <FiUsers />, path: "/students" },
+    { name: "Attendance", icon: <FiCalendar />, path: "/attendance" },
+    { name: "Timetable", icon: <FiFileText />, path: "/timetable" },
+    { name: "Exams", icon: <FiBookOpen />, path: "/exams" },
+    { name: "Fees", icon: <FiCreditCard />, path: "/fees" },
+    { name: "Library", icon: <FiBookOpen />, path: "/library" },
+    { name: "Hostel", icon: <FiHome />, path: "/hostel" },
+    { name: "Notifications", icon: <FiBell />, path: "/notifications" },
+    { name: "Transport", icon: <FiTruck />, path: "/transport" },
+    { name: "Support", icon: <FiHelpCircle />, path: "/support" },
+    
+    ];
 
   return (
-    <div className="w-64 bg-white shadow-lg flex-shrink-0">
-      <div className="p-6 text-2xl font-bold text-violet-700 border-b">
+    <div className="sidebar">
+      {/* Header / Logo */}
+      <div className="sidebar-header">
         🧠 SOLVIX
       </div>
-      <nav className="flex-1 p-4 space-y-2">
+
+      {/* Navigation */}
+      <nav className="sidebar-nav">
         {menuItems.map((item) => (
           <NavLink
             key={item.name}
             to={item.path}
             className={({ isActive }) =>
-              `flex items-center px-4 py-2.5 rounded-lg text-gray-600 hover:bg-violet-100 hover:text-violet-700 transition-colors duration-200 ${
-                isActive ? 'bg-violet-200 text-violet-800 font-semibold' : ''
-              }`
+              `nav-link ${isActive ? "active" : ""}`
             }
           >
-            <span className="text-xl mr-3">{item.icon}</span>
-            {item.name}
+            <span className="nav-link-icon">{item.icon}</span>
+            <span>{item.name}</span>
           </NavLink>
         ))}
       </nav>
