@@ -14,7 +14,7 @@ import {
   FiHelpCircle,
   FiHome,
 } from "react-icons/fi";
-import logo from "../assets/logo.png"; // make sure your logo.png is in src/assets
+import logo from "/logo.png"; // make sure your logo.png is in src/assets
 
 const Sidebar = () => {
   const menuItems = [
