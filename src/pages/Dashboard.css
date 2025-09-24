@@ -1,15 +1,15 @@
 .dashboard-grid {
-    display: grid;
-    gap: 1.5rem;
-  }
-  
-  /* Stat Cards Grid */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-  
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
   .stat-card {
     background-color: #ffffff;
     padding: 1.5rem;
@@ -33,17 +33,16 @@
   /* Charts Grid */
   .charts-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
   
   /* Bottom Grid */
   .bottom-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
   }
-  
   /* A generic card style for other dashboard items */
   .info-card {
     background-color: #ffffff;
