@@ -1,61 +1,69 @@
-/* Sidebar container */
+/* Sidebar Container */
 .sidebar {
-  width: 256px; /* 16rem */
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  width: 250px; /* Adjust as needed */
+  height: 100vh;
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
+  overflow-y: auto; /* Enables scrolling if content overflows */
 }
 
-/* Header with logo/text */
+/* Sidebar Header / Logo */
 .sidebar-header {
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #6d28d9; /* Violet color */
-  border-bottom: 1px solid #e5e7eb;
+  padding: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
 }
 
-/* Navigation container */
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation */
 .sidebar-nav {
-  flex-grow: 1;
-  padding: 1rem;
+  flex-grow: 1; /* Makes the nav take up available space */
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* spacing between links */
 }
 
-/* Each nav link */
+/* Nav Link */
 .nav-link {
   display: flex;
   align-items: center;
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  color: #4b5563; /* Gray text */
+  padding: 12px 20px;
+  color: #666;
   text-decoration: none;
+  font-size: 16px;
   transition: background-color 0.2s, color 0.2s;
 }
 
-/* Icon inside nav link */
+.nav-link:hover {
+  background-color: #e6f7ff;
+  color: #007bff;
+}
+
+.nav-link.active {
+  background-color: #d1e7fd;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+/* Nav Link Icon */
 .nav-link-icon {
-  margin-right: 0.75rem;
-  font-size: 1.25rem;
+  margin-right: 15px;
   display: flex;
   align-items: center;
 }
 
-/* Hover effect */
-.nav-link:hover {
-  background-color: #f3e8ff; /* Light violet on hover */
-  color: #6d28d9;
-}
-
-/* Active link */
-.nav-link.active {
-  background-color: #e9d5ff; /* Darker violet */
-  color: #5b21b6;
-  font-weight: 600;
+/* Ensure the icons have the right size */
+.nav-link-icon svg {
+  width: 20px;
+  height: 20px;
 }

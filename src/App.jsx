@@ -2,7 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from './components/Sidebar';
 import Header from './components/Header'; // You'll need the Header for the full layout
 import Dashboard from "./pages/Dashboard";
-
+import StudentsPage from "./pages/Studentspage";
+import Attendance from "./pages/Attendance";
+import ExamResults from "./pages/ExamResults";
+import Support from "./pages/Support";
+import Library from "./pages/Library"; 
 // STEP 1: Import the main CSS file here
 import './App.css';
 
@@ -18,7 +22,17 @@ function App() {
           <Header />
           <main className="page-content">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/students" element={<StudentsPage />} />
+            <Route path="/attendance" element={<Attendance />} />
+            <Route path="/library" element={<Library />} />
+            <Route path="/exams" element={<ExamResults />} />
+            
+            
+            
+            
+            
+            <Route path="/support" element={<Support />} />
             </Routes>
           </main>
         </div>

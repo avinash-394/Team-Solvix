@@ -1,0 +1,87 @@
+.support-container {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .support-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1a237e;
+  }
+  
+  .support-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .faq-section, .ticket-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+  }
+  
+  .faq-section h3, .ticket-section h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .faq-item h4 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .faq-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ticket-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    padding: 12px 25px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .submit-button:hover {
+    background-color: #1e88e5;
+  }
+  
+  .success-message {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,86 @@
+.exams-container {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .exams-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1a237e;
+  }
+  
+  .exams-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .search-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .search-form input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  .search-button {
+    padding: 12px 25px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #1e88e5;
+  }
+  
+  .results-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .results-card h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .results-table th, .results-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .results-table th {
+    background-color: #f7f9fc;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .no-results-message {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }
+  

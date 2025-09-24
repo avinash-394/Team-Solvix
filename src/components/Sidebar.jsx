@@ -1,4 +1,3 @@
-// Sidebar.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
@@ -14,7 +13,8 @@ import {
   FiHelpCircle,
   FiHome,
 } from "react-icons/fi";
-import logo from "/logo.png"; // make sure your logo.png is in src/assets
+// Correct way to import from src/assets
+import logo from "../assets/logo.png"; // 
 
 const Sidebar = () => {
   const menuItems = [
@@ -34,8 +34,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       {/* Header / Logo */}
-      <div className="sidebar-header flex justify-center items-center py-4">
-        <img src={logo} alt="Solvix Logo" className="h-10 w-auto" />
+      <div className="sidebar-header">
+        {/* Use the imported 'logo' variable here */}
+        <img src={logo} alt="Solvix Logo" className="logo" />
       </div>
 
       {/* Navigation */}
