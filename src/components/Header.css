@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .header-welcome h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .header-welcome p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .header-user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+  }
+  
+  .user-details .user-name {
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .user-details .user-role {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
