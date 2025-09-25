@@ -14,7 +14,7 @@ import {
   FiHome,
 } from "react-icons/fi";
 // Correct way to import from src/assets
-import logo from "../assets/logo.png"; // 
+import logo from "/logo.png"; // 
 
 const Sidebar = () => {
   const menuItems = [
