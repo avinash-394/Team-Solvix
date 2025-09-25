@@ -1,0 +1,87 @@
+.fees-container {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .fees-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1a237e;
+  }
+  
+  .fees-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .fees-controls {
+    margin-bottom: 25px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  .fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .fees-table th, .fees-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .fees-table th {
+    background-color: #f7f9fc;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .fees-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .fee-status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .fee-status-badge.paid {
+    background-color: #4CAF50;
+  }
+  
+  .fee-status-badge.pending {
+    background-color: #FFC107;
+  }
+  
+  .pay-button {
+    padding: 8px 15px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #1e88e5;
+  }
+  
