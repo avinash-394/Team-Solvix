@@ -1,0 +1,80 @@
+.transport-container {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .transport-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1a237e;
+  }
+  
+  .transport-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .route-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .route-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .route-name {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .driver-info {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .driver-info span {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  .students-list {
+    margin-top: 20px;
+  }
+  
+  .students-list h4 {
+    margin: 0 0 10px 0;
+    color: #777;
+  }
+  
+  .students-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .students-list li {
+    background-color: #f7f9fc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+  }
+  

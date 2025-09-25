@@ -7,6 +7,9 @@ import Attendance from "./pages/Attendance";
 import ExamResults from "./pages/ExamResults";
 import Support from "./pages/Support";
 import Library from "./pages/Library"; 
+import Transport from "./pages/Transport";
+import Notifications from "./pages/Notifications";
+import Hostel from "./pages/Hostel";
 // STEP 1: Import the main CSS file here
 import './App.css';
 
@@ -27,9 +30,12 @@ function App() {
             <Route path="/attendance" element={<Attendance />} />
             <Route path="/library" element={<Library />} />
             <Route path="/exams" element={<ExamResults />} />
+            <Route path="/transport" element={<Transport />} />
+            <Route path="/notifications" element={<Notifications />} />
+            <Route path="/hostel" element={<Hostel />} />
             
             
-            
+
             
             
             <Route path="/support" element={<Support />} />
