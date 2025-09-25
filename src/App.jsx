@@ -12,6 +12,7 @@ import Notifications from "./pages/Notifications";
 import Hostel from "./pages/Hostel";
 import Timetable from "./pages/Timetable";
 import FeesPayments from "./pages/FeesPayments";
+import Layout from "./components/Layout";
 
 // STEP 1: Import the main CSS file here
 import './App.css';
@@ -19,14 +20,8 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      {/* STEP 2: Use the new class name from App.css */}
-      <div className="app-container"> 
-        <Sidebar />
-        
-        {/* Use the new class name here too */}
-        <div className="main-content"> 
-          <Header />
-          <main className="page-content">
+    <main>
+          <Layout>
             <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/students" element={<StudentsPage />} />
@@ -38,16 +33,10 @@ function App() {
             <Route path="/hostel" element={<Hostel />} />
             <Route path="/timetable" element={<Timetable />} />
             <Route path="/fees" element={<FeesPayments />} />
-            
-            
-
-            
-            
             <Route path="/support" element={<Support />} />
             </Routes>
+            </Layout>
           </main>
-        </div>
-      </div>
     </BrowserRouter>
   );
 }
